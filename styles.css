@@ -514,7 +514,9 @@ section {
 
 .about-image {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
+  align-items: center;
+  /* Remove width: 100% if present */
 }
 
 .about-image-container {
@@ -1417,10 +1419,11 @@ section {
   }
   
   .about-content {
-    grid-template-columns: 1fr;
-    gap: 3rem;
-    text-align: center;
-  }
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 4rem;
+  align-items: center;
+}
   
   .skills-content {
     grid-template-columns: 1fr;
