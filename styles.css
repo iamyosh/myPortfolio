@@ -538,58 +538,6 @@ section {
   100% { transform: translateY(0); }
 }
 
-.about-profile-image {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 1rem;
-  box-shadow: var(--shadow-card);
-}
-
-.about-image-upload {
-  position: absolute;
-  bottom: 1rem;
-  right: 1rem;
-  width: 48px;
-  height: 48px;
-  background: var(--primary);
-  color: white;
-  border: none;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  transition: var(--transition-smooth);
-  box-shadow: var(--shadow-card);
-}
-
-.about-image-upload:hover {
-  transform: scale(1.1);
-}
-
-.about-decoration {
-  position: absolute;
-  border-radius: 1rem;
-  background: var(--gradient-accent);
-  opacity: 0.1;
-}
-
-.about-decoration.decoration-1 {
-  width: 100px;
-  height: 100px;
-  top: -20px;
-  left: -20px;
-  z-index: -1;
-}
-.about-decoration.decoration-2 {
-  width: 60px;
-  height: 60px;
-  bottom: -20px;
-  right: -20px;
-  z-index: -1;
-}
-
 .about-heading {
   font-size: 2rem;
   font-weight: 600;
