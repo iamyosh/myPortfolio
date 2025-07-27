@@ -519,6 +519,15 @@ section {
   /* Remove width: 100% if present */
 }
 
+.about-image img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: var(--shadow-card);
+  border: 4px solid rgba(255,255,255,0.2);
+}
+
 .about-image-container {
   position: relative;
   width: 50px;
