@@ -326,13 +326,6 @@ section {
   margin-bottom: 1rem;
 }
 
-.section-description {
-  font-size: 1.125rem;
-  color: var(--muted-foreground);
-  max-width: 600px;
-  margin: 0 auto;
-}
-
 .section-underline {
   width: 60px;
   height: 4px;
@@ -565,7 +558,7 @@ section {
   margin-bottom: 1.5rem;
   color: var(--muted-foreground);
   line-height: 1.7;
-  font-size: 1rem;
+  font-size: 1.11rem;
 }
 
 .about-stats {
