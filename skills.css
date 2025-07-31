@@ -19,7 +19,7 @@
     font-size: 48px;
     font-weight: 700;
     margin-bottom: 20px;
-    background: linear-gradient(135deg, #64ffda 0%, #00bcd4 100%);
+    background: linear-gradient(135deg, #ffffff 0%, #ffffff 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -90,6 +90,12 @@
     color: #e0e0e0;
 }
 .skill-progress {
+    flex: 1;
+    height: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 4px;
+    overflow: hidden;
+    position: relative;
 }
 
 .skill-progress-fill {
