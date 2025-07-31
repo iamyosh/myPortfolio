@@ -62,7 +62,7 @@
 .category-icon {
     width: 24px;
     height: 24px;
-    color: #64ffda;
+    color:hsla(220, 89%, 51%, 0.974);
     margin-right: 12px;
 }
 
@@ -121,7 +121,7 @@
     min-width: 40px;
     text-align: right;
     font-weight: 600;
-    color: #64ffda;
+    color: hsl(220, 100%, 67%);
     font-size: 14px;
 }
 
