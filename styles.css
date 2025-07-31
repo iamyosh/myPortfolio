@@ -14,7 +14,7 @@
   --secondary: hsl(240, 5%, 96%);
   --secondary-foreground: hsl(264, 88%, 26%);
 
-  --accent: hsl(267, 84%, 60%);
+  --accent: #9043ef;
   --accent-glow: hsl(267, 100%, 80%);
   --accent-foreground: hsl(0, 0%, 100%);
   --accent-dark: hsl(267, 84%, 40%);
