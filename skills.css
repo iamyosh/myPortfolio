@@ -50,7 +50,7 @@
 .skill-category:hover {
     transform: translateY(-5px);
     box-shadow: 0 20px 40px rgba(100, 255, 218, 0.1);
-    border-color: rgba(100, 255, 218, 0.3);
+    border-color:  hsl(267, 100%, 80%);
 }
 
 .category-header {
