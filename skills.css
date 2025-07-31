@@ -47,3 +47,121 @@
     padding: 30px;
     transition: all 0.3s ease;
 }
+.skill-category:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px rgba(100, 255, 218, 0.1);
+    border-color: rgba(100, 255, 218, 0.3);
+}
+
+.category-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.category-icon {
+    width: 24px;
+    height: 24px;
+    color: #64ffda;
+    margin-right: 12px;
+}
+
+.category-header h3 {
+    font-size: 22px;
+    font-weight: 600;
+    color: white;
+}
+
+.skills-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.skill-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.skill-name {
+    min-width: 120px;
+    font-weight: 500;
+    color: #e0e0e0;
+}
+.skill-progress {
+}
+
+.skill-progress-fill {
+    height: 100%;
+    background: linear-gradient(90deg, #64ffda 0%, #00bcd4 100%);
+    border-radius: 4px;
+    transition: width 1.5s ease-in-out;
+    position: relative;
+}
+
+.skill-progress-fill::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(90deg, transparent 0%, rgba(255, 255, 255, 0.3) 50%, transparent 100%);
+    animation: shimmer 2s infinite;
+}
+
+.skill-percentage {
+    min-width: 40px;
+    text-align: right;
+    font-weight: 600;
+    color: #64ffda;
+    font-size: 14px;
+}
+
+@keyframes shimmer {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .skills-section {
+        padding: 60px 0;
+    }
+    
+    .section-title {
+        font-size: 36px;
+    }
+    
+    .section-subtitle {
+        font-size: 18px;
+    }
+    
+    .skills-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    
+    .skill-category {
+        padding: 25px;
+    }
+    
+    .skill-item {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 8px;
+    }
+    
+    .skill-name {
+        min-width: auto;
+    }
+    
+    .skill-percentage {
+        text-align: left;
+    }
+}
