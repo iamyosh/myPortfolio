@@ -169,12 +169,12 @@
     border-radius: 20px;
     font-size: 12px;
     font-weight: 500;
-    border: 1px solid hsla(220, 100%, 68%, 0.467);
+    border: 1px solid hsla(220, 65%, 73%, 0.404);
     transition: all 0.3s ease;
 }
 
 .tech-tag:hover {
-    color:hsla(220, 93%, 72%, 0.974);
+    color:hsl(220, 95%, 75%);
 }
 
 .projects-footer {
@@ -197,7 +197,7 @@
 
 .view-all-btn:hover {
     transform: translateY(-2px);
-    box-shadow: 0 15px 35px rgba(255, 107, 107, 0.4);
+    box-shadow: 0 20px 40px rgba(123, 100, 255, 0.147);
     border-color: rgba(255, 255, 255, 0.2);
 }
 
