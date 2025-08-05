@@ -36,7 +36,7 @@
 .projects-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    gap: 30px;
+    gap: 45px;
     margin-bottom: 60px;
 }
 
@@ -113,8 +113,7 @@
 }
 
 .project-link:hover {
-    background: rgba(255, 107, 107, 0.8);
-    border-color: rgba(255, 107, 107, 1);
+    background:  hsl(272, 51%, 64%);
     transform: scale(1.1);
 }
 
@@ -128,7 +127,7 @@
     position: relative;
 }
 
-.project-badge {
+/* .project-badge {
     display: inline-block;
     background: linear-gradient(135deg, #ff6b6b 0%, #ee5a52 100%);
     color: white;
@@ -139,7 +138,7 @@
     text-transform: uppercase;
     letter-spacing: 0.5px;
     margin-bottom: 15px;
-}
+} */
 
 .project-title {
     font-size: 24px;
@@ -153,7 +152,7 @@
 .project-description {
     color: #b0b0c0;
     line-height: 1.6;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     font-size: 16px;
 }
 
@@ -170,14 +169,12 @@
     border-radius: 20px;
     font-size: 12px;
     font-weight: 500;
-    border: 1px solid rgba(255, 255, 255, 0.2);
+    border: 1px solid hsla(220, 100%, 68%, 0.467);
     transition: all 0.3s ease;
 }
 
 .tech-tag:hover {
-    background: rgba(255, 107, 107, 0.2);
-    border-color: rgba(255, 107, 107, 0.5);
-    color: #ff6b6b;
+    color:hsla(220, 93%, 72%, 0.974);
 }
 
 .projects-footer {
@@ -188,7 +185,7 @@
     display: inline-flex;
     align-items: center;
     gap: 10px;
-    background: linear-gradient(135deg, #ff6b6b 0%, #ee5a52 100%);
+    background: linear-gradient(135deg, hsla(220, 64%, 54%, 0.186) 50%);
     color: white;
     padding: 15px 30px;
     border-radius: 50px;
@@ -240,5 +237,4 @@
     .project-image {
         height: 180px;
     }
-    
 }
