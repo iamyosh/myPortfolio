@@ -179,3 +179,21 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+
+
+// Typing animation for hero h1
+function typeWriter(element, text, speed, i = 0) {
+    if (!element) return;
+    element.textContent = text.substring(0, i);
+    if (i <= text.length) {
+        setTimeout(() => typeWriter(element, text, speed, i + 1), speed);
+    }
+}
+
+
+// Run typing animation when page loads
+document.addEventListener("DOMContentLoaded", function() {
+  const heading = document.querySelector("#home h1");
+  const originalText = heading.textContent;
+  typeWriter(heading, originalText, 100);
+});
