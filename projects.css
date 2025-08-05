@@ -113,7 +113,7 @@
 }
 
 .project-link:hover {
-    background:  hsl(272, 51%, 64%);
+    background:  hsla(256, 80%, 80%, 0.566);
     transform: scale(1.1);
 }
 
@@ -174,7 +174,7 @@
 }
 
 .tech-tag:hover {
-    color:hsl(220, 95%, 75%);
+    color:hsl(220, 98%, 61%);
 }
 
 .projects-footer {
