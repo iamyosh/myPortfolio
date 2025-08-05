@@ -1,36 +1,6 @@
-document.addEventListener('DOMContentLoaded', function() {
-    lucide.createIcons();
-    
-    // Animate skill progress bars on scroll
-    animateSkillBars();
-});
+lucide.createIcons();
 
-function animateSkillBars() {
-    const skillBars = document.querySelectorAll('.skill-progress-fill');
-    
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                const targetWidth = entry.target.style.width;
-                entry.target.style.width = '0%';
-                
-                setTimeout(() => {
-                    entry.target.style.width = targetWidth;
-                }, 100);
-                
-                // Unobserve after animation to prevent re-triggering
-                observer.unobserve(entry.target);
-            }
-        });
-    }, { 
-        threshold: 0.5,
-        rootMargin: '0px 0px -100px 0px'
-    });
-    
-    skillBars.forEach(bar => observer.observe(bar));
-}
-
-// Add hover effects for skill categories
+// hover effects for skill categories
 document.addEventListener('DOMContentLoaded', function() {
     const skillCategories = document.querySelectorAll('.skill-category');
     
@@ -44,3 +14,30 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+
+//Enhanced animateSkillBars()
+function animateSkillBars() {
+    const skillBars = document.querySelectorAll('.skill-progress-fill');
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const targetWidth = entry.target.dataset.targetWidth || entry.target.style.width;
+                if (targetWidth) {
+                    // Trigger animation by changing width (CSS transition handles the rest)
+                    entry.target.style.width = targetWidth; 
+                    // Unobserve to prevent re-triggering
+                    observer.unobserve(entry.target);
+                }
+            }
+        });
+    }, { 
+        threshold: 0.5,
+        rootMargin: '0px 0px -100px 0px'
+    });
+
+    skillBars.forEach(bar => observer.observe(bar));
+}
+
+// Call the function (keep this)
+animateSkillBars();
