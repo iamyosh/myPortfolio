@@ -104,6 +104,7 @@
     border-radius: 4px;
     transition: width 1.5s ease-in-out;
     position: relative;
+    width: 0%;
 }
 
 .skill-progress-fill::after {
