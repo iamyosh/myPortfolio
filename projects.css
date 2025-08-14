@@ -159,7 +159,7 @@
 .project-tech {
     display: flex;
     flex-wrap: wrap;
-    gap: 8px;
+    gap: 9px;
 }
 
 .tech-tag {
