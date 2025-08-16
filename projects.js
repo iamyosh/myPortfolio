@@ -99,8 +99,8 @@ function applyParallax() {
         });
     };
 
-    updateParallax();
-    document.addEventListener('scroll', updateParallax);
+    // updateParallax();
+    // document.addEventListener('scroll', updateParallax);
 }
 
 // View all button
