@@ -70,12 +70,12 @@
     object-fit:cover;
     object-position: center;
     display: block;
-    transform: translateY(var(--parallax, 0px));
+    /* transform: translateY(var(--parallax, 0px)) scale(1); */
     transition: transform 0.3s ease;
 }
 
 .project-card:hover .project-image img {
-    transform: scale(1.1);
+    transform: scale(1.1) translateY(var(--parallax, 0px)) scale(1.1);    
 }
 
 .project-overlay {
@@ -90,6 +90,7 @@
     justify-content: center;
     opacity: 0;
     transition: opacity 0.3s ease;
+    z-index: 2;
 }
 
 .project-card:hover .project-overlay {
