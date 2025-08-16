@@ -11,8 +11,10 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Handle project link clicks
     handleProjectLinks();
+    
+    // Add parallax effect
+    applyParallax();
 });
-
 
 function animateProjectCards() {
     const projectCards = document.querySelectorAll('.project-card');
@@ -41,122 +43,82 @@ function animateProjectCards() {
     });
 }
 
-
 function addProjectInteractions() {
     const projectCards = document.querySelectorAll('.project-card');
     
     projectCards.forEach(card => {
-        // Add hover effect for tech tags
         const techTags = card.querySelectorAll('.tech-tag');
         techTags.forEach(tag => {
-            tag.addEventListener('mouseenter', function() {
-                this.style.transform = 'scale(1.05)';
-            });
-            
-            tag.addEventListener('mouseleave', function() {
-                this.style.transform = 'scale(1)';
-            });
+            tag.addEventListener('mouseenter', () => tag.style.transform = 'scale(1.05)');
+            tag.addEventListener('mouseleave', () => tag.style.transform = 'scale(1)');
         });
         
-        // Add click effect for project cards
-        card.addEventListener('click', function(e) {
-            // Don't trigger if clicking on a link
+        card.addEventListener('click', (e) => {
             if (e.target.closest('.project-link')) return;
-            
-            // Add pulse effect
-            this.style.transform = 'translateY(-10px) scale(1.02)';
-            setTimeout(() => {
-                this.style.transform = 'translateY(-10px)';
-            }, 150);
+            card.style.transform = 'translateY(-10px) scale(1.02)';
+            setTimeout(() => card.style.transform = 'translateY(-10px)', 150);
         });
         
-        // Add keyboard support
         card.setAttribute('tabindex', '0');
-        card.addEventListener('keydown', function(e) {
-            if (e.key === 'Enter') {
-                this.click();
-            }
+        card.addEventListener('keydown', (e) => {
+            if (e.key === 'Enter') card.click();
         });
     });
 }
-
-
 
 function handleProjectLinks() {
     const projectLinks = document.querySelectorAll('.project-link');
     
     projectLinks.forEach(link => {
-        link.addEventListener('click', function(e) {
+        link.addEventListener('click', (e) => {
+            link.style.transform = 'scale(1.2)';
+            setTimeout(() => link.style.transform = 'scale(1.1)', 100);
             
-            // Add click animation
-            this.style.transform = 'scale(1.2)';
-            setTimeout(() => {
-                this.style.transform = 'scale(1.1)';
-            }, 100);
-            
-            // Handle different link types
-            const icon = this.querySelector('i');
+            const icon = link.querySelector('i');
             if (icon) {
                 const iconName = icon.getAttribute('data-lucide');
-                
-                if (iconName === 'external-link') {
-                    console.log('Opening live demo...');
-                    // window.open('demo-url', '_blank');
-                } else if (iconName === 'github') {
-                    console.log('Opening GitHub repository...');
-                    // window.open('github-url', '_blank');
-                }
+                if (iconName === 'external-link') console.log('Opening live demo...');
+                else if (iconName === 'github') console.log('Opening GitHub repository...');
             }
         });
         
-
-        // Add hover sound effect (optional)
-        link.addEventListener('mouseenter', function() {
-            // You can add a subtle sound effect here
-            this.style.transform = 'scale(1.1) rotate(5deg)';
-        });
-        
-        link.addEventListener('mouseleave', function() {
-            this.style.transform = 'scale(1)';
-        });
+        link.addEventListener('mouseenter', () => link.style.transform = 'scale(1.1) rotate(5deg)');
+        link.addEventListener('mouseleave', () => link.style.transform = 'scale(1)');
     });
 }
 
-
-// Add parallax effect to project images
-document.addEventListener('scroll', function() {
+// Parallax effect using CSS variable
+function applyParallax() {
     const projectImages = document.querySelectorAll('.project-image img');
-    const scrolled = window.pageYOffset;
     
-    projectImages.forEach((img, index) => {
-        const rate = scrolled * -0.5;
-        img.style.transform = `translateY(${rate}px)`;
+    const updateParallax = () => {
+        const scrolled = window.pageYOffset;
+        projectImages.forEach(img => {
+            const rate = scrolled * -0.5;
+            img.style.setProperty('--parallax', `${rate}px`);
+        });
+    };
+
+    updateParallax();
+    document.addEventListener('scroll', updateParallax);
+}
+
+// View all button
+document.addEventListener('DOMContentLoaded', () => {
+    const viewAllBtn = document.querySelector('.view-all-btn');
+    if (!viewAllBtn) return;
+    
+    viewAllBtn.addEventListener('click', () => {
+        const icon = viewAllBtn.querySelector('i');
+        icon.style.animation = 'spin 1s linear infinite';
+        setTimeout(() => {
+            icon.style.animation = '';
+            console.log('Redirecting to projects page...');
+        }, 1000);
     });
 });
 
-
-// Add view all button interaction
-document.addEventListener('DOMContentLoaded', function() {
-    const viewAllBtn = document.querySelector('.view-all-btn');
-    
-    if (viewAllBtn) {
-        viewAllBtn.addEventListener('click', function(e) {
-            
-            // Add loading animation
-            const icon = this.querySelector('i');
-            icon.style.animation = 'spin 1s linear infinite';
-            
-            setTimeout(() => {
-                icon.style.animation = '';
-                console.log('Redirecting to projects page...');
-                // window.location.href = '/projects';
-            }, 1000);
-        });
-    }
-});
-
-
-// Add CSS for spin animation
+// Spin animation CSS
 const style = document.createElement('style');
 style.textContent = `
     @keyframes spin {
