@@ -74,7 +74,6 @@ function addProjectInteractions() {
         card.setAttribute('tabindex', '0');
         card.addEventListener('keydown', function(e) {
             if (e.key === 'Enter') {
-                e.preventDefault();
                 this.click();
             }
         });
@@ -88,8 +87,6 @@ function handleProjectLinks() {
     
     projectLinks.forEach(link => {
         link.addEventListener('click', function(e) {
-            e.preventDefault();
-            e.stopPropagation();
             
             // Add click animation
             this.style.transform = 'scale(1.2)';
@@ -144,7 +141,6 @@ document.addEventListener('DOMContentLoaded', function() {
     
     if (viewAllBtn) {
         viewAllBtn.addEventListener('click', function(e) {
-            e.preventDefault();
             
             // Add loading animation
             const icon = this.querySelector('i');
