@@ -7,9 +7,100 @@
   <link rel="stylesheet" href="styles.css" />
   <link rel="stylesheet" href="skills.css" />
   <link rel="stylesheet" href="projects.css" />
+  <!-- <link rel="stylesheet" href="achievements.css" /> -->
+  <link rel="stylesheet" href="stats.css" />
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+
+
+
+  <!-- Internal CSS for Achievements section -->
+<style>
+  .achv-section {
+    padding: 60px 20px;
+    text-align: center;
+    background: #f9f9f9;
+  }
+
+  .achv-title {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    font-weight: bold;
+    color: #222;
+  }
+
+  .achv-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
+  .achv-card {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+    text-align: left;
+  }
+
+  .achv-card:hover {
+    transform: translateY(-5px);
+  }
+
+  .achv-card i {
+    font-size: 2rem;
+    color: #007bff;
+    margin-bottom: 10px;
+  }
+
+  .achv-card p {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #333;
+  }
+
+  .achv-title2 {
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #222;
+}
+  .achievement-details {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+    font-size: 0.9rem;
+    color: #555;
+  }
+  
+  .achievement-details li {
+    margin-bottom: 5px;
+  }
+
+  .achievement-description {
+    font-size: 0.9rem;
+    color: #666;
+    line-height: 1.5;
+  }
+
+  .achievement-details li {
+  margin: 4px 0;
+}
+
+.achievement-description {
+  font-size: 0.95rem;
+  color: #444;
+  line-height: 1.4;
+}
+
+</style>
+
 
 </head>
 <body>
@@ -213,7 +304,7 @@
 
 
   <!-- Projects Section -->
-  <section id="projects" class="projects-section">
+  <section id="projects" class="projects-section" >
         <div class="container">
             <div class="section-header">
                 <h2 class="section-title">Featured Projects</h2>
@@ -251,7 +342,7 @@
 
                         </div>
                     </div>
-                </div>
+                </div><br><br>
 
 
                 <div class="project-card">
@@ -317,7 +408,81 @@
         </div>
     </section>
               
-    
+
+
+  <!-- Achievements Section -->
+<section class="achv-section" id="achievements">
+  <h2 class="achv-title">Achievements</h2>
+  <div class="achv-container">
+    <div class="achv-card">
+      <i class="fas fa-trophy"></i>
+      <h3 class="achv-title2">Provincial First Place in Wushu</h3>
+      <ul class="achievement-details">
+          <li><strong>Date:</strong> August 2022</li>
+          <li><strong>Academy:</strong> Colombo Martial Arts Academy</li>
+          <li><strong>Verification:</strong> ✅ Verified</li>
+          <li><strong>Category:</strong> Sports</li>
+        </ul>
+
+        <p class="achievement-description">
+          Secured first place in the provincial-level Wushu championship, representing my district and showcasing strong discipline and skills.
+        </p>
+    </div>
+
+    <div class="achv-card">
+      <i class="fas fa-language"></i>
+      <p>JLPT N3 Japanese Certification</p>
+    </div>
+    <div class="achv-card">
+      <i class="fas fa-graduation-cap"></i>
+      <p>Dean’s List – University Recognition</p>
+    </div>
+    <div class="achv-card">
+      <i class="fas fa-medal"></i>
+      <p>Gold Medal – National School Competitions</p>
+    </div>
+    <div class="achv-card">
+      <i class="fas fa-users"></i>
+      <p>Leadership Role in IEEE WIE</p>
+    </div>
+    <div class="achv-card">
+      <i class="fas fa-certificate"></i>
+      <p>Certified in Software Quality Assurance</p>
+    </div>
+    <div class="achv-card">
+      <i class="fas fa-laptop-code"></i>
+      <p>Built Innovative Attendance Marking System</p>
+    </div>
+  </div>
+</section>
+
+
+
+    <!-- Stats Section -->
+  <section id="stats" class="stats-section">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-card">
+          <h2 class="stat-number" data-target="6">0+</h2>
+          <p class="stat-label">Certifications</p>
+        </div>
+        <div class="stat-card">
+          <h2 class="stat-number" data-target="4">0+</h2>
+          <p class="stat-label">Projects</p>
+        </div>
+        <div class="stat-card">
+          <h2 class="stat-number" data-target="15">0+</h2>
+          <p class="stat-label">Social Contributions</p>
+        </div>
+        <div class="stat-card">
+          <h2 class="stat-number" data-target="3">0+</h2>
+          <p class="stat-label">Languages</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
 
   <!-- Blogs Section -->
   <section class="blogs-section" id="blogs">
@@ -365,5 +530,7 @@
   <script src="script.js"></script>
   <script src="skills.js"></script>
   <script src="projects.js"></script>
+  <script src="stats.js"></script>
+  <!-- <script src="achievements.js"></script> -->
 </body>
 </html>
