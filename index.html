@@ -7,99 +7,13 @@
   <link rel="stylesheet" href="styles.css" />
   <link rel="stylesheet" href="skills.css" />
   <link rel="stylesheet" href="projects.css" />
-  <!-- <link rel="stylesheet" href="achievements.css" /> -->
+  <link rel="stylesheet" href="achievements.css" />
   <link rel="stylesheet" href="stats.css" />
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
   <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 
-
-
-
-  <!-- Internal CSS for Achievements section -->
-<style>
-  .achv-section {
-    padding: 60px 20px;
-    text-align: center;
-    background: #f9f9f9;
-  }
-
-  .achv-title {
-    font-size: 2rem;
-    margin-bottom: 30px;
-    font-weight: bold;
-    color: #222;
-  }
-
-  .achv-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
-    max-width: 1000px;
-    margin: 0 auto;
-  }
-
-  .achv-card {
-    background: white;
-    padding: 20px;
-    border-radius: 12px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    transition: transform 0.3s ease;
-    text-align: left;
-  }
-
-  .achv-card:hover {
-    transform: translateY(-5px);
-  }
-
-  .achv-card i {
-    font-size: 2rem;
-    color: #007bff;
-    margin-bottom: 10px;
-  }
-
-  .achv-card p {
-    font-size: 1rem;
-    font-weight: 500;
-    color: #333;
-  }
-
-  .achv-title2 {
-  font-size: 1.3rem;
-  font-weight: bold;
-  margin-bottom: 10px;
-  color: #222;
-}
-  .achievement-details {
-    list-style: none;
-    padding: 0;
-    margin: 10px 0;
-    font-size: 0.9rem;
-    color: #555;
-  }
-  
-  .achievement-details li {
-    margin-bottom: 5px;
-  }
-
-  .achievement-description {
-    font-size: 0.9rem;
-    color: #666;
-    line-height: 1.5;
-  }
-
-  .achievement-details li {
-  margin: 4px 0;
-}
-
-.achievement-description {
-  font-size: 0.95rem;
-  color: #444;
-  line-height: 1.4;
-}
-
-</style>
 
 
 </head>
@@ -411,51 +325,215 @@
 
 
   <!-- Achievements Section -->
-<section class="achv-section" id="achievements">
-  <h2 class="achv-title">Achievements</h2>
-  <div class="achv-container">
-    <div class="achv-card">
-      <i class="fas fa-trophy"></i>
-      <h3 class="achv-title2">Provincial First Place in Wushu</h3>
-      <ul class="achievement-details">
-          <li><strong>Date:</strong> August 2022</li>
-          <li><strong>Academy:</strong> Colombo Martial Arts Academy</li>
-          <li><strong>Verification:</strong> ✅ Verified</li>
-          <li><strong>Category:</strong> Sports</li>
-        </ul>
-
-        <p class="achievement-description">
-          Secured first place in the provincial-level Wushu championship, representing my district and showcasing strong discipline and skills.
-        </p>
+   <section id="achievements" class="achievements-section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Achievements & Certifications</h2>
+        <div class="section-underline"></div>
+      </div>
     </div>
 
-    <div class="achv-card">
-      <i class="fas fa-language"></i>
-      <p>JLPT N3 Japanese Certification</p>
+    <!-- Achievement Card -->
+<div class="card-grid">
+
+  <div class="card">
+<div class="achievement-card" role="region" aria-label="Achievement Card Provincial First Place in Wushu">
+  <div class="card-header">
+    <div class="icon-container" aria-hidden="true" title="Achievement crown icon">
+      <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M20.25 7.5L18 19.5H6L3.75 7.5L8.25 9L12 5.25L15.75 9L20.25 7.5Z" fill="#CFA715"/>
+      </svg>
     </div>
-    <div class="achv-card">
-      <i class="fas fa-graduation-cap"></i>
-      <p>Dean’s List – University Recognition</p>
+    <div class="category-year">
+      <div class="category">Sports</div>
+      <div class="year" tabindex="0">2023</div>
     </div>
-    <div class="achv-card">
-      <i class="fas fa-medal"></i>
-      <p>Gold Medal – National School Competitions</p>
+</div>
+
+<h2 class="achievement-title">Provincial First Place in Wushu</h2>
+  <p class="achievement-desc">
+    Achieved first place in provincial Wushu martial arts competition, demonstrating dedication, discipline, and excellence in physical performance.
+  </p>
+
+  <div class="achievement-footer">
+    <div class="stars" aria-label="Five star rating. All stars filled.">
+      <!-- Five golden star SVGs -->
+      <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+      <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+      <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+      <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+      <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
     </div>
-    <div class="achv-card">
-      <i class="fas fa-users"></i>
-      <p>Leadership Role in IEEE WIE</p>
-    </div>
-    <div class="achv-card">
-      <i class="fas fa-certificate"></i>
-      <p>Certified in Software Quality Assurance</p>
-    </div>
-    <div class="achv-card">
-      <i class="fas fa-laptop-code"></i>
-      <p>Built Innovative Attendance Marking System</p>
-    </div>
+    <div>Verified Achievement</div>
   </div>
-</section>
+</div></div><br>
 
+
+<div class="card">
+<div class="achievement-card" role="region" aria-label="Achievement Card Provincial First Place in Wushu">
+  <div class="card-header">
+    <div class="icon-container" aria-hidden="true" title="Achievement crown icon">
+      <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M20.25 7.5L18 19.5H6L3.75 7.5L8.25 9L12 5.25L15.75 9L20.25 7.5Z" fill="#CFA715"/>
+      </svg>
+    </div>
+    <div class="category-year">
+      <div class="category">Sports</div>
+      <div class="year" tabindex="0">2023</div>
+    </div>
+</div>
+
+<h2 class="achievement-title">Provincial First Place in Wushu</h2>
+  <p class="achievement-desc">
+    Achieved first place in provincial Wushu martial arts competition, demonstrating dedication, discipline, and excellence in physical performance.
+  </p>
+
+  <div class="achievement-footer">
+    <div class="stars" aria-label="Five star rating. All stars filled.">
+      <!-- Five golden star SVGs -->
+      <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+      <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+      <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+      <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+      <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+    </div>
+    <div>Verified Achievement</div>
+  </div>
+</div></div><br>
+
+<div class="card">
+<div class="achievement-card" role="region" aria-label="Achievement Card Provincial First Place in Wushu">
+  <div class="card-header">
+    <div class="icon-container" aria-hidden="true" title="Achievement crown icon">
+      <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M20.25 7.5L18 19.5H6L3.75 7.5L8.25 9L12 5.25L15.75 9L20.25 7.5Z" fill="#CFA715"/>
+      </svg>
+    </div>
+    <div class="category-year">
+      <div class="category">Sports</div>
+      <div class="year" tabindex="0">2023</div>
+    </div>
+</div>
+
+<h2 class="achievement-title">Provincial First Place in Wushu</h2>
+  <p class="achievement-desc">
+    Achieved first place in provincial Wushu martial arts competition, demonstrating dedication, discipline, and excellence in physical performance.
+  </p>
+
+  <div class="achievement-footer">
+    <div class="stars" aria-label="Five star rating. All stars filled.">
+      <!-- Five golden star SVGs -->
+      <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+      <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+      <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+      <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+      <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+    </div>
+    <div>Verified Achievement</div>
+  </div>
+</div></div><br>
+</div>
+
+
+<div class="card-grid">
+<div class="card">
+<div class="achievement-card" role="region" aria-label="Achievement Card Provincial First Place in Wushu">
+  <div class="card-header">
+    <div class="icon-container" aria-hidden="true" title="Achievement crown icon">
+      <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M20.25 7.5L18 19.5H6L3.75 7.5L8.25 9L12 5.25L15.75 9L20.25 7.5Z" fill="#CFA715"/>
+      </svg>
+    </div>
+    <div class="category-year">
+      <div class="category">Sports</div>
+      <div class="year" tabindex="0">2023</div>
+    </div>
+</div>
+
+<h2 class="achievement-title">Provincial First Place in Wushu</h2>
+  <p class="achievement-desc">
+    Achieved first place in provincial Wushu martial arts competition, demonstrating dedication, discipline, and excellence in physical performance.
+  </p>
+
+  <div class="achievement-footer">
+    <div class="stars" aria-label="Five star rating. All stars filled.">
+      <!-- Five golden star SVGs -->
+      <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+      <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+      <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+      <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+      <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+    </div>
+    <div>Verified Achievement</div>
+  </div>
+</div></div><br>
+
+<div class="card">
+<div class="achievement-card" role="region" aria-label="Achievement Card Provincial First Place in Wushu">
+  <div class="card-header">
+    <div class="icon-container" aria-hidden="true" title="Achievement crown icon">
+      <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M20.25 7.5L18 19.5H6L3.75 7.5L8.25 9L12 5.25L15.75 9L20.25 7.5Z" fill="#CFA715"/>
+      </svg>
+    </div>
+    <div class="category-year">
+      <div class="category">Sports</div>
+      <div class="year" tabindex="0">2023</div>
+    </div>
+</div>
+
+<h2 class="achievement-title">Provincial First Place in Wushu</h2>
+  <p class="achievement-desc">
+    Achieved first place in provincial Wushu martial arts competition, demonstrating dedication, discipline, and excellence in physical performance.
+  </p>
+
+  <div class="achievement-footer">
+    <div class="stars" aria-label="Five star rating. All stars filled.">
+      <!-- Five golden star SVGs -->
+      <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+      <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+      <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+      <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+      <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+    </div>
+    <div>Verified Achievement</div>
+  </div>
+</div></div><br>
+
+<div class="card">
+<div class="achievement-card" role="region" aria-label="Achievement Card Provincial First Place in Wushu">
+  <div class="card-header">
+    <div class="icon-container" aria-hidden="true" title="Achievement crown icon">
+      <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M20.25 7.5L18 19.5H6L3.75 7.5L8.25 9L12 5.25L15.75 9L20.25 7.5Z" fill="#CFA715"/>
+      </svg>
+    </div>
+    <div class="category-year">
+      <div class="category">Sports</div>
+      <div class="year" tabindex="0">2023</div>
+    </div>
+</div>
+
+<h2 class="achievement-title">Provincial First Place in Wushu</h2>
+  <p class="achievement-desc">
+    Achieved first place in provincial Wushu martial arts competition, demonstrating dedication, discipline, and excellence in physical performance.
+  </p>
+
+  <div class="achievement-footer">
+    <div class="stars" aria-label="Five star rating. All stars filled.">
+      <!-- Five golden star SVGs -->
+      <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+      <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+      <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+      <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+      <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+    </div>
+    <div>Verified Achievement</div>
+  </div>
+</div></div><br>
+
+</div>
+  </section>
 
 
     <!-- Stats Section -->
