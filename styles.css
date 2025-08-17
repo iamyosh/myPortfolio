@@ -4,7 +4,7 @@
 :root {
   /* Core Colors */
   --background: hsl(0, 0%, 100%);
-  --foreground: lab(16.52% 48.05 -58.06);
+  --foreground: rgb(48, 2, 127);
 
   /* Brand Colors */
   --primary: hsl(220, 90%, 27%);
