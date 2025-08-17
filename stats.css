@@ -1,7 +1,7 @@
 /* Stats Section */
 .stats-section {
   padding: 20px 10px;
-  background: linear-gradient(135deg, #000000 0%, #101023 100%);
+  /* background: linear-gradient(135deg, #000000 0%, #101023 100%); */
 }
 
 .stats-grid {
