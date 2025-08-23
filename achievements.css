@@ -122,3 +122,17 @@
     filter:
     drop-shadow(0 0 0.5px #b38500);
 }
+
+.achievement-certificate-link {
+    display: inline-block;
+    margin-top: 8px;
+    color: #3853d6;
+    font-weight: 600;
+    text-decoration: underline;
+    font-size: 0.95rem;
+    transition: color 0.2s;
+}
+.achievement-certificate-link:hover {
+    color: #23308a;
+    text-decoration: none;
+}
