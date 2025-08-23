@@ -50,7 +50,7 @@
   :root {
     --background: hsl(222, 84%, 4.9%);
     --foreground: hsl(210, 40%, 98%);
-    --primary: hsl(220, 100%, 70%);
+    --primary: rgb(102, 153, 255);
     --primary-glow: hsl(220, 100%, 85%);
     --primary-foreground: hsl(222, 84%, 4.9%);
     --secondary: hsl(217, 33%, 18%);
