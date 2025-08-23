@@ -122,17 +122,45 @@
     filter:
     drop-shadow(0 0 0.5px #b38500);
 }
-
 .achievement-certificate-link {
     display: inline-block;
-    margin-top: 8px;
-    color: #3853d6;
+    margin-top: 10px;
+    padding: 8px 22px;
+    background: linear-gradient(90deg, #3853d6 60%, #4f8cff 100%);
+    color: #fff;
     font-weight: 600;
-    text-decoration: underline;
-    font-size: 0.95rem;
-    transition: color 0.2s;
-}
-.achievement-certificate-link:hover {
-    color: #23308a;
+    font-size: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 16px rgba(56, 83, 214, 0.12), 0 1.5px 4px rgba(56, 83, 214, 0.10);
     text-decoration: none;
+    transition: 
+        background 0.25s,
+        box-shadow 0.25s,
+        transform 0.15s;
+    letter-spacing: 0.02em;
+    position: relative;
+    overflow: hidden;
+}
+
+.achievement-certificate-link::after {
+    content: '';
+    position: absolute;
+    left: 0; top: 0; right: 0; bottom: 0;
+    background: rgba(255,255,255,0.08);
+    opacity: 0;
+    transition: opacity 0.2s;
+    border-radius: 8px;
+}
+
+.achievement-certificate-link:hover,
+.achievement-certificate-link:focus {
+    background: linear-gradient(90deg, #4f8cff 60%, #3853d6 100%);
+    box-shadow: 0 8px 24px rgba(56, 83, 214, 0.18), 0 3px 8px rgba(56, 83, 214, 0.13);
+    transform: translateY(-2px) scale(1.03);
+    color: #fff;
+}
+
+.achievement-certificate-link:hover::after,
+.achievement-certificate-link:focus::after {
+    opacity: 1;
 }
