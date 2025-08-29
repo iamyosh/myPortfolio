@@ -50,12 +50,12 @@
   :root {
     --background: hsl(222, 84%, 4.9%);
     --foreground: hsl(210, 40%, 98%);
-    --primary: rgb(102, 153, 255);
+    --primary: #6699ff;
     --primary-glow: hsl(220, 100%, 85%);
     --primary-foreground: hsl(222, 84%, 4.9%);
     --secondary: hsl(217, 33%, 18%);
     --secondary-foreground: hsl(210, 40%, 98%);
-    --accent: hsl(267, 100%, 80%);
+    --accent: #c799ff;
     --accent-glow: hsl(267, 100%, 90%);
     --accent-foreground: hsl(222, 84%, 4.9%);
     --card: hsl(217, 33%, 18%);
