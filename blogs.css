@@ -68,3 +68,24 @@
     height: 200px;
     overflow: hidden;
 }
+
+.blog-card.featured .blog-image {
+    height: 250px;
+}
+
+.blog-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.blog-card:hover .blog-image img {
+    transform: scale(1.1);
+}
+
+.blog-overlay {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
