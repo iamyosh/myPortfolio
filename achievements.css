@@ -126,7 +126,7 @@
     display: inline-block;
     margin-top: 25px;
     padding: 8px 22px;
-    background: linear-gradient(90deg,  rgb(13, 60, 155) 60%, #02235f 100%);
+    background: linear-gradient(90deg,  #c799ff 60%, #8d6ce8 100%);
     color: #fff;
     font-weight: 600;
     font-size: 1rem;
@@ -154,7 +154,7 @@
 
 .achievement-certificate-link:hover,
 .achievement-certificate-link:focus {
-    background: linear-gradient(90deg, #2355b3 60%, #3853d6 100%);
+    background: linear-gradient(90deg, #6d58f6 60%, #6699ff 100%);
     box-shadow: 0 8px 24px rgba(56, 83, 214, 0.18), 0 3px 8px rgba(56, 83, 214, 0.13);
     transform: translateY(-2px) scale(1.03);
     color: #fff;
